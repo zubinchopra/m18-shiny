@@ -1,23 +1,9 @@
-# Module 14: Shiny
+# Shiny
 
-## Overview
 In this (brief) learning module, we introduce the Shiny framework for building interactive applications in R. Shiny provides a structure for communicating between a user-interface (i.e., a web-browser) and an R session. This not only enables developers to create interactive graphics, but provides a way for users to interact directly with a R session (without writing any code!).
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Contents**
+Helpful links:
 
-- [Resources](#resources)
-- [Using Multiple R Files](#using-multiple-r-files)
-- [Shiny](#shiny)
-  - [Application Architecture](#application-architecture)
-  - [User Interface (ui.R)](#user-interface-uir)
-  - [Server code (server.r)](#server-code-serverr)
-- [Publishing ShinyApps](#publishing-shinyapps)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-## Resources
 - [Shiny Website](http://shiny.rstudio.com/)
 - [Shiny Basics](http://shiny.rstudio.com/articles/basics.html)
 - [Shiny Tutorial](http://shiny.rstudio.com/tutorial/)
@@ -95,7 +81,7 @@ shinyUI(fluidPage(
 
 The above code defines a user-interface's layout using _panels_, or sections of a page. The segment above would render this UI:
 
-![histogram made by shiny](imgs/shiny-histogram.png)
+![histogram made by shiny](m18-imgs/shiny-histogram.png)
 
 If you dissect the code, you can start to see how each element is rendered in the UI. However, it doesn't make clear where the element `"distPlot"` is coming from. That's the other half of our project, in `server.R`.
 
@@ -133,7 +119,7 @@ Similarly, you should note that the UI has a `sliderInput` called **`bins`**. We
 
 To actually run your Shiny app, click on the **Run App** button in R Studio:
 
-![run shiny application button](imgs/run-app.png)
+![run shiny application button](m18-imgs/run-app.png)
 
 To see these scripts in action, see [demo-1](demo-1), or practice with [exercise-2](exercise-2).
 
@@ -142,6 +128,6 @@ Sharing a ShinyApp with the world is a bit more involved than simply pushing you
 
 You'll need to create an account on [shinyapps.io](https://www.shinyapps.io), then you can publish your apps using the **publish** button:
 
-![shiny publish button](imgs/publish-app.png)
+![shiny publish button](m18-imgs/publish-app.png)
 
 You should then be able to access your app at `https://USERNAME.shinyapps.io/PROJECT-NAME/`. For more information and troubleshooting, see the [documentation](http://docs.rstudio.com/shinyapps.io/index.html).
