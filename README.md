@@ -40,7 +40,7 @@ df <- read.csv('some/csv/file')
 buildMap(df)
 ```
 
-To practice breaking your code into multiple files, see [exercise-1](exercise-1).
+To practice breaking your code into multiple files, see [exercise-1](http://github.com/info201-s17/m18-shiny/tree/master/exercise-1).
 
 ## Shiny
 Shiny is a **web application framework for R**. As opposed to a simple (static) web page, a _web application_ supports more sophisticated interactions, and often connects multiple programming environments (i.e., passing information between multiple machines).
@@ -121,7 +121,7 @@ To actually run your Shiny app, click on the **Run App** button in R Studio:
 
 ![run shiny application button](m18-imgs/run-app.png)
 
-To see these scripts in action, see [demo-1](demo-1), or practice with [exercise-2](exercise-2).
+To see these scripts in action, see [demo-1](demo-1), or practice with [exercise-2](http://github.com/info201-s17/m18-shiny/tree/master/exercise-2).
 
 ## Publishing ShinyApps
 Sharing a ShinyApp with the world is a bit more involved than simply pushing your code to GitHub(though still quite painless). We can just use GitHub because, in addition to needed a web host, we need a session of R running that the UI can connect to. In this class, we'll introduce [shinyapps.io](https://www.shinyapps.io).
