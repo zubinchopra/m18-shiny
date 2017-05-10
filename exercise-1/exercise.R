@@ -1,7 +1,7 @@
 # Exercise 1: Loading functions
 
 # Set your directory
-setwd('~/Documents/info-201/m14-shiny/exercise-1/')
+setwd('~/Documents/info201-s17/m18-shiny/exercise-1/')
 
 # Source your BuildScatter.r script, exposing your BuildScatter function
 source('./scripts/buildMap.R')
